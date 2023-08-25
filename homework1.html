@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table{
+            border: 1;
+            width: 40%; */
+        /* } */
+        #td2{
+            color: blue;
+            font-size: 1px;
+        }
+        #td3{
+            color: blue;
+            font-size: 1px;
+        }
+        #td4{
+            color: blue;
+            font-size: 1px;
+        }
+        #td5{
+            color: blue;
+            font-size: 1px;
+        }
+        #td6{
+            color: purple;
+            font-size: 1px;
+        }
+        #td7{
+            text-align: right;
+        }
+        #td8{
+            text-align: right;
+        }
+        #td9{
+            text-align: right;
+        }
+        #td10{
+            text-align: right;
+        }
+        #td11{
+            text-align: right;
+        }
+        #td12{
+            text-align: right;
+        }
+        #td13{
+            text-align: right;
+        }
+        #td14{
+            text-align: right;
+        } #td15{
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+    <table >
+        <tr >
+            <td bgcolor="skyblue" colspan="2" id="td1">아이디(ID)정보</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td7">아이디</td>
+            <td id="td2"><input type="text"><button>중복검사</button><br>
+            4~12자 영자/숫자 가능, 한글, 특수문자 ID는 사용할 수 없습니다.</td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td8" >비밀번호</td>
+            <td id="td3">
+                <form action="password" method="post"></form>
+                <input type="password" name="userpw">
+                (4~8자이내로 만들어 주세요)</td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td9">비밀번호 확인</td>
+            <td id="td4"><input type="password" name="password">
+                (위의 번호와 같이 입력해주세요)</td>
+        </tr>
+        <tr>
+            <td bgcolor="skyblue" colspan="2">개인정보</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td10">이름(한글)</td>
+            <td id="td5"><input type="text">(예 : 박정현)</td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td11">생년월일</td>
+            <td><input type="date" name="mybirth" id="mybirth" min="2022-01-01" max="2023-12-31"></td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td12">주소</td>
+            <td><input type="text"><button>우편번호 찾기</button><br>
+                <input type="text" size="80px">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td13">전화번호</td>
+            <td id="td6">핸드폰 <input type="number" name="phonenumber" id="pnm">
+                <input type="checkbox" name="phonenumber" value="SKT" checked>SKT
+                <input type="checkbox" name="phonenumber" value="KT">KT
+                <input type="checkbox" name="phonenumber" value="LGU">LGU
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td14">이메일</td>
+            <td><input type="text" name="email" id="email" ></td>
+        </tr>
+        <tr>
+            <td bgcolor="lightyellow" id="td15">가입인사</td>
+            <td><textarea name="intro" id="" cols="30" rows="5"></textarea></td>
+        </tr>
+    </table>
+    <button>확인</button><button>다시 입력</button>
+</body>
+</center>
+</html>
